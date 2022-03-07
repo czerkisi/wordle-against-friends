@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="create-game" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="czerkisi.StartScreenController">
+   <children>
+      <Label style="-fx-font-weight: bold;" text="Wordle Against Friends">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="80.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="43.0" prefWidth="489.0" spacing="10.0">
+         <children>
+            <Label style="-fx-font-weight: bold;" text="Port: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="portNumberField" prefHeight="25.0" prefWidth="107.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </HBox>
+      <Button id="create-game" mnemonicParsing="false" onAction="#createGame" prefHeight="43.0" prefWidth="160.0" stylesheets="@InternalFiles/ButtonStyles.css" text="Create Game">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Button>
+      <Button id="join-game" mnemonicParsing="false" onAction="#joinGame" prefHeight="43.0" prefWidth="160.0" stylesheets="@InternalFiles/ButtonStyles.css" text="Join Game" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+</VBox>
