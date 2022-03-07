@@ -122,7 +122,7 @@ public class StartScreenController implements Initializable {
 
     }
 
-    private int getPortNumber() throws IllegalArgumentException{
+    private int getPortNumber() throws IllegalArgumentException {
         if (portNumberField.getText().isEmpty()){
             throw new IllegalArgumentException("Port number cannot be blank");
         }
